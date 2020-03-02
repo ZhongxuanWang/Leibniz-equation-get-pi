@@ -10,8 +10,7 @@ area_of_square = 0
 def calc(num):
     global area_of_circle, area_of_square
     for n in range(num):
-        r = [random.random(),random.random()]
-        if math.sqrt(r[0]**2+r[1]**2) <= 1:
+        if math.sqrt(random.random()**2+random.random()**2) <= 1:
             area_of_circle += 1
         area_of_square += 1
     print(area_of_circle/area_of_square*4)
